@@ -24,6 +24,7 @@ export const useAuthStore=create((set,get)=>({
         }
     },
     signup:async(data)=>{
+        console.log(data)
         set({isSigningUp:true});
         try {
             const res=await axiosInstance.post('/api/auth/signup',data)
@@ -37,6 +38,7 @@ export const useAuthStore=create((set,get)=>({
         }
     },
     login:async(data)=>{
+        console.log(data)
         try {
             set({isLoggingIn:true})
             const res=await axiosInstance.post('/api/auth/login',data)
