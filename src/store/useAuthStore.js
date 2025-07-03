@@ -2,7 +2,7 @@ import { create } from "zustand";
 import { axiosInstance } from "../lib/axios";
 import toast from "react-hot-toast";
 import {io} from 'socket.io-client';
-const BASE_URL='https://talkie-backend-snowy.vercel.app'
+const BASE_URL='https://talkie-backend-production-4eb8.up.railway.app'
 export const useAuthStore=create((set,get)=>({
     authUser:null,
     isSigningUp:false,
