@@ -17,7 +17,7 @@ const ChartComponent = () => {
   },[selectedUser._id,getChats,subscribeToMessages,unsubscribeToMessages])
   useEffect(()=>{
     if(messageEndRef.current && messages){
-        messageEndRef.current.scrollIntoView({behaviour:'smooth'})
+        messageEndRef.current.scrollIntoView({behavior:'smooth'})
     }
   },[messages])
   if (isLoadingChat){
