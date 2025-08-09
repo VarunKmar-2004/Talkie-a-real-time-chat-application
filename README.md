@@ -45,7 +45,7 @@ Client → Media Upload Service → Cloudinary → URL → Messaging Service →
 Client → Profile Service → Users (MongoDB) → Confirmation to Client
 
 # ASCII diagram:
-
+```
 User (Browser: React + Zustand + Socket.io)
   | 1) Login/Signup (REST)
   v
@@ -99,3 +99,4 @@ Profile Service (Express)
   | Update Users (MongoDB)
   v
 Client updates profile UI
+```
